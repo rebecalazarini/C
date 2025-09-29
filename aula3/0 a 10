@@ -1,0 +1,21 @@
+//programa que peça uma nota de 0 a 10, caso  valor seja inválido mostre na tela e volte no loop
+#include<stdio.h>
+int main() {
+    int nota;
+
+    for (;;) 
+    {
+        printf("Digite uma nota de 0 a 10: ");
+        scanf("%d", &nota);
+
+        if (nota <= 10) {
+            break;
+            
+        } else {
+            printf("Nota inválida \n");
+        }
+    }
+    printf("Você digitou a nota certa. fim do programa.\n");
+
+    return 0;
+}
